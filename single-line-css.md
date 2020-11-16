@@ -29,7 +29,7 @@ Because of this, if you want your boxes to fill out to their `<flex-basis>` size
   flex: 0 1 150px;
 }
 ```
-If you do want the boxes to stretch and fill the space as they wrap to the next line, set the <flex-grow> to 1, so it would look like:
+If you _do_ want the boxes to stretch and fill the space as they wrap to the next line, set the `<flex-grow>` to `1`, so it would look like:
 ```
 .parent {
   display: flex;
