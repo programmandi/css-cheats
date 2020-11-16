@@ -1,9 +1,9 @@
 # Single Line CSS Layouts (https://web.dev/one-line-layouts/)
 
 ### . Super Centered: place-items: center 
-For the first 'single-line' layout, let's solve the biggest mystery in all of the CSS land: centering things. I want you to know that it's easier than you think with place-items: center.
+For the first 'single-line' layout, let's solve the biggest mystery in all of the CSS land: centering things. I want you to know that it's easier than you think with [`place-items: center`](https://developer.mozilla.org/en-US/docs/Web/CSS/place-items).
 
-First specify grid as the display method, and then write place-items: center on the same element. place-items is a shorthand to set both align-items and justify-items at once. By setting it to center, both align-items and justify-items are set to center.
+First specify `grid` as the `display` method, and then write `place-items: center` on the same element. `place-items` is a shorthand to set both `align-items` and `justify-items` at once. By setting it to `center`, both `align-items` and `justify-items` are set to `center`.
 ```
 .parent {
   display: grid;
@@ -17,9 +17,9 @@ Next we have the deconstructed pancake! This is a common layout for marketing si
 
 By using Flexbox for this effect, you won't need media queries to adjust the placement of these elements when the screen resizes.
 
-The flex shorthand stands for: flex: <flex-grow> <flex-shrink> <flex-basis>.
+The [`flex`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex) shorthand stands for: `flex: <flex-grow> <flex-shrink> <flex-basis>`.
 
-Because of this, if you want your boxes to fill out to their <flex-basis> size, shrink on smaller sizes, but not stretch to fill any additional space, write: flex: 0 1 <flex-basis>. In this case, your <flex-basis> is 150px so it looks like:
+Because of this, if you want your boxes to fill out to their `<flex-basis>` size, shrink on smaller sizes, but not _stretch_ to fill any additional space, write: `flex: 0 1 <flex-basis>`. In this case, your `<flex-basis>` is `150px` so it looks like:
 ```
 .parent {
   display: flex;
